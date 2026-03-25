@@ -1,0 +1,93 @@
+
+
+Create a fully responsive, modern, cinematic portfolio website for a documentary film platform called "JUNOOB FILMS".
+
+🌍 ABOUT BRAND:
+JUNOOB FILMS is an independent documentary platform from South Punjab, Pakistan. It focuses on real human stories, marginalized communities, culture, and social issues. The tone should feel emotional, artistic, raw, and cinematic.
+
+📌 DESIGN STYLE:
+- Inspired by: jawadshariffilms.com (clean cinematic storytelling layout)
+- Minimalist + modern + storytelling-focused
+- Dark theme as default (black, charcoal, deep brown tones)
+- Optional light mode toggle
+- Elegant typography (serif for headings, sans-serif for body)
+- Smooth animations (fade-in, scroll reveal, parallax)
+- Fullscreen hero sections with video/image background
+- Film-inspired aesthetic (grain overlays, subtle motion)
+
+📱 RESPONSIVENESS:
+- Fully mobile responsive
+- Tablet + desktop optimized
+- Smooth layout transitions
+- Sticky navigation on scroll
+
+🎬 PAGES STRUCTURE:
+
+1. HOME PAGE
+- Fullscreen cinematic hero (video background)
+- Tagline:
+  "From the Margins. Stories That Matter."
+- CTA buttons: "Watch Films", "Explore Stories"
+- Featured projects slider (cinematic thumbnails)
+- About preview section
+- Latest stories grid (3–6 items)
+- Smooth scroll transitions
+
+2. ABOUT PAGE
+"JUNOOB FILMS is an independent documentary platform rooted in South Punjab, Pakistan. It documents stories of communities often ignored in mainstream narratives. It is a visual archive of voices, lives, and realities."
+
+- Founder:
+  Mahjabeen Abid – Founder / Director
+- Co-Founder:
+  Muhammad Waseem – Producer
+
+3. FILMS PAGE
+- Grid layout (cinematic thumbnails)
+- Hover effects (play icon + title reveal)
+- Categories filter
+
+4. GALLERY
+- Masonry grid
+- Lightbox preview
+
+5. STORIES / BLOG
+- Blog grid + single page
+
+6. CONTACT
+- Contact form + social links
+
+🧩 COMPONENTS:
+- Sticky Navbar
+- Footer
+- Dark/Light Toggle
+- Smooth animations
+
+🎨 UI/UX:
+- Cinematic hover effects
+- Video backgrounds
+- Scroll animations
+- Film grain overlay
+
+⚙️ TECH STACK:
+- HTML5
+- CSS3
+- JavaScript
+
+📦 OUTPUT:
+- index.html
+- style.css
+- script.js
+
+🎯 GOAL:
+Create an emotional cinematic storytelling website.
+
+
+
+Add advanced cinematic interactions:
+- Mouse parallax effect on hero
+- Film grain overlay animation
+- Smooth page transitions
+- Video preview on hover
+- Optional ambient sound toggle
+
+Make it feel premium, Apple-level UI, award-winning cinematic experience.

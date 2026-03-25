@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNOOB FILMS | Documentary Stories That Matter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="film-grain"></div>
+    <div class="noise-overlay"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">JUNOOB</span>
+                <span class="logo-sub">FILMS</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#films" class="nav-link">Films</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#stories" class="nav-link">Stories</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-bg"></div>
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#films" class="mobile-link">Films</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#stories" class="mobile-link">Stories</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline poster="https://picsum.photos/1920/1080?grayscale">
+                <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content" data-parallax>
+            <div class="hero-badge">Documentary Film Platform</div>
+            <p class="hero-tagline">From the Margins. Stories That Matter.</p>
+            <h1 class="hero-title">
+                <span class="title-line">JUNOOB</span>
+                <span class="title-line accent">FILMS</span>
+            </h1>
+            <p class="hero-subtitle">Documenting real human stories from South Punjab, Pakistan</p>
+            <div class="hero-cta">
+                <a href="#films" class="btn btn-primary">
+                    <span class="btn-text">Watch Films</span>
+                    <span class="btn-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span class="btn-text">Our Story</span>
+                    <span class="btn-icon">→</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-count="50">0</span>
+                <span class="stat-label">Films</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-label">Awards</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="8">0</span>
+                <span class="stat-label">Years</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>DOCUMENTARY • CINEMA • STORYTELLING • VISUAL ART • HUMAN STORIES • DOCUMENTARY • CINEMA • STORYTELLING • VISUAL ART • HUMAN STORIES • </span>
+        </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <img src="https://picsum.photos/seed/about/800/500" alt="About JUNOOB FILMS">
+                        <div class="about-image-overlay"></div>
+                        <div class="about-image-frame"></div>
+                    </div>
+                    <div class="about-floating-card">
+                        <span class="floating-year">Est. 2018</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label">
+                        <span class="label-dot"></span>
+                        About Us
+                    </span>
+                    <h2 class="section-title">Stories From the <span class="accent-text">Margins</span></h2>
+                    <p class="about-description">
+                        JUNOOB FILMS is an independent documentary platform rooted in South Punjab, Pakistan. 
+                        It documents stories of communities often ignored in mainstream narratives. It is a visual 
+                        archive of voices, lives, and realities.
+                    </p>
+                    <p class="about-description">
+                        We believe every story matters. Our work focuses on marginalized communities, culture, 
+                        social issues, and the raw human experience that connects us all.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">◈</div>
+                            <span>Cinematic Excellence</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">◈</div>
+                            <span>Authentic Stories</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">◈</div>
+                            <span>Cultural Preservation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-team">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://i.pravatar.cc/300?img=1" alt="Mahjabeen Abid">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#">IG</a>
+                                <a href="#">TW</a>
+                                <a href="#">LI</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="member-name">Mahjabeen Abid</h3>
+                    <p class="member-role">Founder / Director</p>
+                    <p class="member-bio">Award-winning filmmaker with a passion for untold stories</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://i.pravatar.cc/300?img=3" alt="Muhammad Waseem">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#">IG</a>
+                                <a href="#">TW</a>
+                                <a href="#">LI</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="member-name">Muhammad Waseem</h3>
+                    <p class="member-role">Producer</p>
+                    <p class="member-bio">Experienced producer bringing stories to life</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://i.pravatar.cc/300?img=5" alt="Team Member">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#">IG</a>
+                                <a href="#">TW</a>
+                                <a href="#">LI</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="member-name">Ali Hassan</h3>
+                    <p class="member-role">Cinematographer</p>
+                    <p class="member-bio">Visual storyteller capturing moments that matter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="films" class="films-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <span class="label-dot"></span>
+                    Our Work
+                </span>
+                <h2 class="section-title">Featured <span class="accent-text">Films</span></h2>
+                <p class="section-subtitle">Award-winning documentaries that touch hearts</p>
+            </div>
+            <div class="films-filter">
+                <button class="filter-btn active" data-filter="all">All Films</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+                <button class="filter-btn" data-filter="short">Short Film</button>
+                <button class="filter-btn" data-filter="social">Social Issue</button>
+            </div>
+            <div class="films-grid">
+                <article class="film-card" data-category="documentary">
+                    <div class="film-thumbnail">
+                        <img src="https://picsum.photos/seed/film1/800/500" alt="Film thumbnail">
+                        <div class="film-overlay">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <video class="film-preview" muted loop preload="none">
+                            <source src="https://cdn.pixabay.com/video/2021/07/30/85730-582241218_large.mp4" type="video/mp4">
+                        </video>
+                        <div class="film-badge">Award Winner</div>
+                    </div>
+                    <div class="film-info">
+                        <span class="film-category">Documentary</span>
+                        <h3 class="film-title">Voices of the Valley</h3>
+                        <p class="film-description">A powerful look at the lives of farmers in South Punjab</p>
+                        <div class="film-meta">
+                            <span>2026</span>
+                            <span>•</span>
+                            <span>24 min</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="film-card" data-category="short">
+                    <div class="film-thumbnail">
+                        <img src="https://picsum.photos/seed/film2/800/500" alt="Film thumbnail">
+                        <div class="film-overlay">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <video class="film-preview" muted loop preload="none">
+                            <source src="https://cdn.pixabay.com/video/2020/08/05/46026-447789967_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="film-info">
+                        <span class="film-category">Short Film</span>
+                        <h3 class="film-title">The Last Weaver</h3>
+                        <p class="film-description">Preserving traditional craftsmanship</p>
+                        <div class="film-meta">
+                            <span>2025</span>
+                            <span>•</span>
+                            <span>12 min</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="film-card" data-category="social">
+                    <div class="film-thumbnail">
+                        <img src="https://picsum.photos/seed/film3/800/500" alt="Film thumbnail">
+                        <div class="film-overlay">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <video class="film-preview" muted loop preload="none">
+                            <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="film-info">
+                        <span class="film-category">Social Issue</span>
+                        <h3 class="film-title">Beyond the Walls</h3>
+                        <p class="film-description">Stories from inside marginalised communities</p>
+                        <div class="film-meta">
+                            <span>2025</span>
+                            <span>•</span>
+                            <span>18 min</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="film-card" data-category="documentary">
+                    <div class="film-thumbnail">
+                        <img src="https://picsum.photos/seed/film4/800/500" alt="Film thumbnail">
+                        <div class="film-overlay">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <video class="film-preview" muted loop preload="none">
+                            <source src="https://cdn.pixabay.com/video/2021/07/30/85730-582241218_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="film-info">
+                        <span class="film-category">Documentary</span>
+                        <h3 class="film-title">River of Dreams</h3>
+                        <p class="film-description">Life along the ancient rivers of Punjab</p>
+                        <div class="film-meta">
+                            <span>2024</span>
+                            <span>•</span>
+                            <span>32 min</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="film-card" data-category="short">
+                    <div class="film-thumbnail">
+                        <img src="https://picsum.photos/seed/film5/800/500" alt="Film thumbnail">
+                        <div class="film-overlay">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <video class="film-preview" muted loop preload="none">
+                            <source src="https://cdn.pixabay.com/video/2020/08/05/46026-447789967_large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="film-info">
+                        <span class="film-category">Short Film</span>
+                        <h3 class="film-title">Colors of Earth</h3>
+                        <p class="film-description">Traditional pottery in modern times</p>
+                        <div class="film-meta">
+                            <span>2024</span>
+                            <span>•</span>
+                            <span>8 min</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="film-card" data-category="social">
+                    <div class="film-thumbnail">
+                        <img src="https://picsum.photos/seed/film6/800/500" alt="Film thumbnail">
+                        <div class="film-overlay">
+                            <div class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <video class="film-preview" muted loop preload="none">
+                            <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4" type="video/mp4">
+                        </video>
+                        <div class="film-badge">Featured</div>
+                    </div>
+                    <div class="film-info">
+                        <span class="film-category">Social Issue</span>
+                        <h3 class="film-title">Unheard Voices</h3>
+                        <p class="film-description">Stories that need to be told</p>
+                        <div class="film-meta">
+                            <span>2023</span>
+                            <span>•</span>
+                            <span>21 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <span class="cta-label">Let's Create Together</span>
+                <h2 class="cta-title">Have a Story to Tell?</h2>
+                <p class="cta-text">We collaborate with organizations and individuals who believe in the power of visual storytelling.</p>
+                <a href="#contact" class="btn btn-primary btn-large">
+                    <span class="btn-text">Get in Touch</span>
+                    <span class="btn-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <span class="label-dot"></span>
+                    Visual Archive
+                </span>
+                <h2 class="section-title">Photo <span class="accent-text">Gallery</span></h2>
+                <p class="section-subtitle">Capturing moments behind the lens</p>
+            </div>
+            <div class="gallery-masonry">
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal1/600/800" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal2/600/600" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal3/600/600" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal4/600/800" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal5/600/600" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal6/600/600" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal7/600/800" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal8/600/600" alt="Gallery image">
+                </div>
+                <div class="gallery-item" data-lightbox>
+                    <img src="https://picsum.photos/seed/gal9/600/600" alt="Gallery image">
+                    <div class="gallery-overlay">
+                        <span>View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">×</button>
+        <img class="lightbox-image" src="" alt="Lightbox image">
+    </div>
+
+    <section id="stories" class="stories-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <span class="label-dot"></span>
+                    Blog
+                </span>
+                <h2 class="section-title">Latest <span class="accent-text">Stories</span></h2>
+                <p class="section-subtitle">Thoughts on filmmaking and storytelling</p>
+            </div>
+            <div class="stories-grid">
+                <article class="story-card">
+                    <div class="story-image">
+                        <img src="https://picsum.photos/seed/story1/800/500" alt="Story thumbnail">
+                        <div class="story-category">Storytelling</div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-date">March 15, 2026</span>
+                        <h3 class="story-title">The Art of Documentary Storytelling</h3>
+                        <p class="story-excerpt">Exploring the techniques behind compelling visual narratives that capture raw human emotions.</p>
+                        <a href="#" class="story-link">Read Article →</a>
+                    </div>
+                </article>
+                <article class="story-card featured">
+                    <div class="story-image">
+                        <img src="https://picsum.photos/seed/story2/800/500" alt="Story thumbnail">
+                        <div class="story-category">Behind the Scenes</div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-date">March 10, 2026</span>
+                        <h3 class="story-title">Behind the Scenes: Voices of the Valley</h3>
+                        <p class="story-excerpt">A deep dive into the making of our award-winning documentary about Punjab's farming communities.</p>
+                        <a href="#" class="story-link">Read Article →</a>
+                    </div>
+                </article>
+                <article class="story-card">
+                    <div class="story-image">
+                        <img src="https://picsum.photos/seed/story3/800/500" alt="Story thumbnail">
+                        <div class="story-category">Culture</div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-date">March 5, 2026</span>
+                        <h3 class="story-title">Preserving Cultural Heritage</h3>
+                        <p class="story-excerpt">How we document and preserve the fading traditions of South Punjab for future generations.</p>
+                        <a href="#" class="story-link">Read Article →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <span class="label-dot"></span>
+                    Get in Touch
+                </span>
+                <h2 class="section-title">Contact <span class="accent-text">Us</span></h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">✉</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>hello@junoobfilms.com</p>
+                            <p>press@junoobfilms.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">◉</div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>South Punjab, Pakistan</p>
+                            <p>Serving worldwide</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">◈</div>
+                        <div class="info-content">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="YouTube">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Vimeo">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">JUNOOB</span>
+                        <span class="logo-sub">FILMS</span>
+                    </a>
+                    <p class="footer-tagline">From the Margins. Stories That Matter.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">Instagram</a>
+                        <a href="#" class="footer-social-link">YouTube</a>
+                        <a href="#" class="footer-social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#films">Films</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>More</h4>
+                        <a href="#stories">Stories</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JUNOOB FILMS. All rights reserved. Developed by <a href="https://www.ahmhost.com" target="_blank" style="color: var(--accent); text-decoration: none;">AhmHost</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

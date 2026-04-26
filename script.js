@@ -52,6 +52,27 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.setAttribute('data-theme', 'light');
     }
 
+    // Ambient Sound Toggle
+    const soundToggle = document.getElementById('soundToggle');
+    const ambientSound = document.getElementById('ambientSound');
+    let isSoundPlaying = false;
+
+    if (soundToggle && ambientSound) {
+        // Set initial volume
+        ambientSound.volume = 0.5;
+        
+        soundToggle.addEventListener('click', () => {
+            if (isSoundPlaying) {
+                ambientSound.pause();
+                soundToggle.classList.remove('playing');
+            } else {
+                ambientSound.play().catch(e => console.log('Audio play failed:', e));
+                soundToggle.classList.add('playing');
+            }
+            isSoundPlaying = !isSoundPlaying;
+        });
+    }
+
     // Navbar scroll effect
     let lastScroll = 0;
     window.addEventListener('scroll', () => {

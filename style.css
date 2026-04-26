@@ -886,6 +886,47 @@ section {
     box-shadow: 0 20px 40px var(--shadow-color);
 }
 
+.team-member.founder-card {
+    grid-column: 1 / -1;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.team-member.founder-card .member-image {
+    width: 220px;
+    height: 220px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.founder-info {
+    flex-grow: 1;
+}
+
+.team-member.founder-card .member-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.team-member.founder-card .member-role {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.founder-card .member-bio-extended p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.founder-card .member-bio-extended p:last-child {
+    margin-bottom: 0;
+}
+
 .member-image {
     width: 140px;
     height: 140px;
@@ -1777,6 +1818,21 @@ section {
     
     .about-team {
         grid-template-columns: 1fr;
+    }
+    
+    .team-member.founder-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .team-member.founder-card .member-name {
+        text-align: center;
+    }
+    
+    .team-member.founder-card .member-image {
+        margin: 0 auto;
     }
     
     body {
